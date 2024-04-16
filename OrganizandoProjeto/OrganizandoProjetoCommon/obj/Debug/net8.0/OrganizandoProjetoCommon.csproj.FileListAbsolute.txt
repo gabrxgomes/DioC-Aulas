@@ -1,0 +1,11 @@
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\bin\Debug\net8.0\OrganizandoProjetoCommon.deps.json
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\bin\Debug\net8.0\OrganizandoProjetoCommon.dll
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\bin\Debug\net8.0\OrganizandoProjetoCommon.pdb
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\OrganizandoProjetoCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\OrganizandoProjetoCommon.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\OrganizandoProjetoCommon.AssemblyInfo.cs
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\OrganizandoProjetoCommon.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\OrganizandoProjetoCommon.dll
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\refint\OrganizandoProjetoCommon.dll
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\OrganizandoProjetoCommon.pdb
+C:\Users\gabri\Desktop\dotnetdio\Novo\OrganizandoProjeto\OrganizandoProjetoCommon\obj\Debug\net8.0\ref\OrganizandoProjetoCommon.dll
