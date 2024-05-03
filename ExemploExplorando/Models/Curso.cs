@@ -30,10 +30,25 @@ namespace ExemploExplorando.Models
 
         public void ListarAlunos()
         {
-            foreach (Pessoa aluno in Alunos)
+
+            for (int count =  0; count < Alunos.Count; count++)
             {
-                Console.WriteLine(aluno.NomeCompleto);
+                //passagem de parametros simples
+                //string texto = "Nº " + count + " - " + Alunos[count].NomeCompleto;
+
+                //fazendo a interpolação
+                string texto =  $"Nº {count + 1} - {Alunos[count].NomeCompleto}";//toda interpolação começa com o dolars
+                //start in number 1 in this expression for not starts in number 0 if number 0 not existis in this context
+                Console.WriteLine(texto);
             }
+
+
+            // foreach (Pessoa aluno in Alunos)
+            // {
+            //     Console.WriteLine(aluno.NomeCompleto);
+            // }
+
+            
         }
     }
 }

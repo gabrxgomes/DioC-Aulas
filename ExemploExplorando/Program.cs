@@ -1,31 +1,15 @@
-﻿// // See https://aka.ms/new-console-template for more information
-// Console.WriteLine("Hello, World!");
-
-using ExemploExplorando.Models;
+﻿using System.Globalization;
 
 
-
-// pessoa1.Nome = "José";
-// pessoa1.Sobrenome = "Carvalho";
-// pessoa1.Idade = 50;
-// pessoa1.Apresentar();
-
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Lucas";
-pessoa1.Sobrenome = "Silva";
-
-
-Pessoa pessoa2 = new Pessoa();
-pessoa2.Nome = "Carlos";
-pessoa2.Sobrenome = "Fernandes";
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt_BR");
 
 
 
-Curso cursoDeIngles = new Curso();
-cursoDeIngles.Nome =  "Ingles";
-cursoDeIngles.Alunos = new List<Pessoa>();
+//TRABALHANDO COM MOEDAS
 
+decimal valorMonetario = 1582.40M;
 
-cursoDeIngles.AdicionarAluno(pessoa1);
-cursoDeIngles.AdicionarAluno(pessoa2);
-cursoDeIngles.ListarAlunos();
+//Console.WriteLine($"{valorMonetario:C}");
+
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+

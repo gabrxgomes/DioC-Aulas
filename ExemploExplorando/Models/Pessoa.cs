@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 namespace ExemploExplorando.Models
 {
     public class Pessoa
-    {
+    {   
+        public Pessoa()
+        {
+
+        }
+
+        public Pessoa(string nome, string sobrenome)
+        {
+            Nome = nome; //a ordem tem que ser 1 - var global da classe predominante no caso o parametro "Nome", 2 - depois a variavel local
+            Sobrenome = sobrenome;
+        }
         //vamos declarar os get e set da classe
         //prop gera automatico
         //public int MyProperty { get; set; }
