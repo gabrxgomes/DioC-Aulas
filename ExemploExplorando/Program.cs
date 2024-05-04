@@ -1,10 +1,11 @@
 ﻿using System.Globalization;
 
-
+// string[] lineExemple =  File.ReadAllLines("Arquivos1/arquivoLeituras.txt");
 
 try
 {   
-    string[] line =  File.ReadAllLines("Arquivos/arquivoLeituras.txt");
+    string[] line =  File.ReadAllLines("Arquivo/arquivoLeituras.txt");//erro de folder
+    string[] line =  File.ReadAllLines("Arquivos/arquivoLeituras.txt");//erro de file
     //eu adicionei o nosso arquivo num array, pois ja que queremos fazer um processamento
     // que percorra o arquivo lendo as linhas no nosso cenário autal
 
@@ -14,12 +15,21 @@ try
     {
         Console.WriteLine(lineLocalVar);
     }
-} catch(Exception ex)
+}
+catch(DirectoryNotFoundException ex)
 {
-    Console.WriteLine($"An error as apaered! Message from try catch method. {ex.Message}");
+    Console.WriteLine($"Could not open a folder, especifit error ! {ex.Message}");
+} 
+catch(FileNotFoundException ex)
+{
+    Console.WriteLine($"Could not open file, especifit error ! {ex.Message}");
+}
+catch(Exception ex)
+{
+    Console.WriteLine($"An Generic error as apaered! Message from try catch method. {ex.Message}");
 }
 
-
+Console.WriteLine("Chegou até aqui !");
 
 
 
