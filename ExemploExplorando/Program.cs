@@ -1,6 +1,41 @@
 ﻿using System.Globalization;
 
 
+
+
+string[] line =  File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+//eu adicionei o nosso arquivo num array, pois ja que queremos fazer um processamento
+// que percorra o arquivo lendo as linhas no nosso cenário autal
+
+
+//o line local var é definida e recebe cada lineLocalVar de line
+foreach (string lineLocalVar in line) // PARA LINHA EM LINHA QUE É O MEU ARRAY, PRINT A MINHA LINHA
+{
+    Console.WriteLine(lineLocalVar);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt_BR");
 //use this if you are completly decided that your code in full culture
 
@@ -81,22 +116,22 @@
 //consisious datetime format with hard format
 
 
-string dateString =  "2022-13-17 18:00";
+// string dateString =  "2022-13-17 18:00";
 
-bool sucess = DateTime.TryParseExact(dateString, "yyyy-MM-dd HH:mm",
-                                    CultureInfo.InvariantCulture,
-                                    DateTimeStyles.None, out DateTime date );
+// bool sucess = DateTime.TryParseExact(dateString, "yyyy-MM-dd HH:mm",
+//                                     CultureInfo.InvariantCulture,
+//                                     DateTimeStyles.None, out DateTime date );
 
 
 
-if (sucess)
-{
-    Console.WriteLine($"Sucess convertion ! Date: {date}");
-}
+// if (sucess)
+// {
+//     Console.WriteLine($"Sucess convertion ! Date: {date}");
+// }
 
-else {
-    Console.WriteLine($"{dateString} is not valid date.");
-}
+// else {
+//     Console.WriteLine($"{dateString} is not valid date.");
+// }
 
 //finish method
 
