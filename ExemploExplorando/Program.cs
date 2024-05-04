@@ -81,12 +81,24 @@
 //consisious datetime format with hard format
 
 
-string dateString =  "2022-12-17 18:00";
+string dateString =  "2022-13-17 18:00";
 
-DateTime.TryParseExact(dateString, "yyyy-MM-dd HH:mm",
+bool sucess = DateTime.TryParseExact(dateString, "yyyy-MM-dd HH:mm",
                                     CultureInfo.InvariantCulture,
                                     DateTimeStyles.None, out DateTime date );
 
-Console.WriteLine(date);
+
+
+if (sucess)
+{
+    Console.WriteLine($"Sucess convertion ! Date: {date}");
+}
+
+else {
+    Console.WriteLine($"{dateString} is not valid date.");
+}
+
+//finish method
+
 
 
