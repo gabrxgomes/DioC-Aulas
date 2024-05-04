@@ -5,7 +5,7 @@
 try
 {   
     string[] line =  File.ReadAllLines("Arquivo/arquivoLeituras.txt");//erro de folder
-    string[] line =  File.ReadAllLines("Arquivos/arquivoLeituras.txt");//erro de file
+    string[] line =  File.ReadAllLines("Arquivos/arquivoLeitura.txt");//erro de file
     //eu adicionei o nosso arquivo num array, pois ja que queremos fazer um processamento
     // que percorra o arquivo lendo as linhas no nosso cenário autal
 
@@ -28,8 +28,13 @@ catch(Exception ex)
 {
     Console.WriteLine($"An Generic error as apaered! Message from try catch method. {ex.Message}");
 }
+finally // o finally é uma função que está ali sempre pra ser executada no fim de nossa execução de erros
+//independente de ter acontecido erros ou não 
+{
+    Console.WriteLine("Chegou até aqui !");
+}
 
-Console.WriteLine("Chegou até aqui !");
+
 
 
 
