@@ -2,17 +2,23 @@
 
 
 
+try
+{   
+    string[] line =  File.ReadAllLines("Arquivos/arquivoLeituras.txt");
+    //eu adicionei o nosso arquivo num array, pois ja que queremos fazer um processamento
+    // que percorra o arquivo lendo as linhas no nosso cenário autal
 
-string[] line =  File.ReadAllLines("Arquivos/arquivoLeitura.txt");
-//eu adicionei o nosso arquivo num array, pois ja que queremos fazer um processamento
-// que percorra o arquivo lendo as linhas no nosso cenário autal
 
-
-//o line local var é definida e recebe cada lineLocalVar de line
-foreach (string lineLocalVar in line) // PARA LINHA EM LINHA QUE É O MEU ARRAY, PRINT A MINHA LINHA
+    //o line local var é definida e recebe cada lineLocalVar de line
+    foreach (string lineLocalVar in line) // PARA LINHA EM LINHA QUE É O MEU ARRAY, PRINT A MINHA LINHA
+    {
+        Console.WriteLine(lineLocalVar);
+    }
+} catch(Exception ex)
 {
-    Console.WriteLine(lineLocalVar);
+    Console.WriteLine($"An error as apaered! Message from try catch method. {ex.Message}");
 }
+
 
 
 
