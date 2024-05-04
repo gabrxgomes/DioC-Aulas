@@ -47,11 +47,46 @@
 //date time format
 
 
-DateTime date =  DateTime.Now;
+// DateTime date =  DateTime.Now;
 
 
-Console.WriteLine(date.ToString("dd/MM/yyyy HH:mm"));
+// Console.WriteLine(date.ToString("dd/MM/yyyy HH:mm"));
 
 
 // Formating date time ! in under comment
+
+// Console.WriteLine(date.ToShortDateString());
+
+// this function return to me a little short date time format, printin jus date!
+
+
+
+//case you prefer using parse to format a date time this works !
+
+// DateTime date = DateTime.Parse("17/04/2022 18:00");// this works but if it is a valid date ---  invalid date "32/04/2022"
+
+// Console.WriteLine(date);
+
+
+// // other exemple the invalid date format
+
+// string  dateString = "2022-13-17 18:00";
+
+// DateTime date1 = DateTime.Parse(dateString);
+
+// Console.WriteLine(date1);
+
+
+
+//consisious datetime format with hard format
+
+
+string dateString =  "2022-12-17 18:00";
+
+DateTime.TryParseExact(dateString, "yyyy-MM-dd HH:mm",
+                                    CultureInfo.InvariantCulture,
+                                    DateTimeStyles.None, out DateTime date );
+
+Console.WriteLine(date);
+
 
