@@ -1,9 +1,59 @@
 ﻿using System.Globalization;
 using ExemploExplorando.Models;
 
-//usando o Throw error
 
-new ExemploExcecao().Metodo1();
+
+Queue<int> fila = new Queue<int> ();
+
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);
+fila.Enqueue(8);
+
+foreach (int item in fila)
+{
+    Console.WriteLine(item);
+}
+
+
+Console.WriteLine($"First: {fila.Peek()}");
+
+Console.WriteLine($"Dequeue, removing a element from queue: {fila.Dequeue()}");
+
+//eu posso simplesmente adiconar um novo elemento a queue 
+
+fila.Enqueue(10);
+//preste bem a atenção na fila de situações, após eu chamar o metodo dequeue eu acrescendo um novo elemento a fila
+
+
+foreach (int item in fila)
+{
+    Console.WriteLine(item);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //usando o Throw error
+
+// new ExemploExcecao().Metodo1();
 
 
 
