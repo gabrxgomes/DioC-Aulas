@@ -6,13 +6,21 @@ using ExemploExplorando.Models;
 Stack<int> pilha = new Stack<int>();
 
 
+//lembrando que na pilha o primeiro elemento é o ultimo da pilha, é o metodo de empilhar
+pilha.Push(4);//4
+pilha.Push(6);//3
+pilha.Push(8);//2
+pilha.Push(10);//1
 
 
+foreach (var item in pilha)//posso usar assim
+//ou assim foreach (int item in pilha)
+{
+    Console.WriteLine(item);
+    
+}
 
-
-
-
-
+Console.WriteLine($"Removendo o item do topo da pilha: {pilha.Pop()}");
 
 
 
