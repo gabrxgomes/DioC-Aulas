@@ -1,75 +1,126 @@
 ﻿using System.Globalization;
-//using ExemploExplorando.Models;
-// Using dictionaries, you can place information followed by a key without worrying about their order.
+using ExemploExplorando.Models;
 
 
-// declaring the dictionary
-Dictionary<string, string> states =  new Dictionary<string, string>();
-
-states.Add("SP", "São Paulo");
-states.Add("BA", "Bahia");
-states.Add("MG", "Minas Gerais");
-states.Add("BA2", "Bahia");
-
-// we have a key and then the content
+//tupla -  uma estrutura de dados que armazena varios dados de diferentes tipos
 
 
-// iterating through the dictionary
+(int, string, string, decimal) tupla = (1, "Nome", "Sobrenome", 10.5M);
 
-foreach(KeyValuePair<string, string> item in states)
-// or do like
-{   
-    // conventional print
-
-    //Console.WriteLine(item);
-
-    // formatting in a nicer way
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-
-
-// Here I have the possibility of adding an identical value to one that I have already used, the important thing is that the key is different
-//states.Add("BA2", "Bahia");
-
-Console.WriteLine("");
-
-Console.WriteLine("");
-
-Console.WriteLine("");
-
-states.Remove("BA2");
-
-//alterando valores usando a nossa chave que é unica
-
-states["SP"] = "São Paulo -  valor alterado";
-
-Console.WriteLine("Showing a new dictionary bettwen remove method");
+Console.WriteLine($"Id: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}");
 
 
 
-foreach(KeyValuePair<string, string> item in states)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
 
 
-string keyValue = "BA3";
-Console.WriteLine($"Verificando o elemento: {keyValue}");
-
-if (states.ContainsKey(keyValue))
-{
-    Console.WriteLine($"Existenting value: {keyValue}");
-}
-
-else 
-{
-    Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {keyValue}");
-}
 
 
-//acessando diretamente o valor do dicionario
 
-Console.WriteLine(states["MG"]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Using dictionaries, you can place information followed by a key without worrying about their order.
+
+
+// // declaring the dictionary
+// Dictionary<string, string> states =  new Dictionary<string, string>();
+
+// states.Add("SP", "São Paulo");
+// states.Add("BA", "Bahia");
+// states.Add("MG", "Minas Gerais");
+// states.Add("BA2", "Bahia");
+
+// // we have a key and then the content
+
+
+// // iterating through the dictionary
+
+// foreach(KeyValuePair<string, string> item in states)
+// // or do like
+// {   
+//     // conventional print
+
+//     //Console.WriteLine(item);
+
+//     // formatting in a nicer way
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+
+// // Here I have the possibility of adding an identical value to one that I have already used, the important thing is that the key is different
+// //states.Add("BA2", "Bahia");
+
+// Console.WriteLine("");
+
+// Console.WriteLine("");
+
+// Console.WriteLine("");
+
+// states.Remove("BA2");
+
+// //alterando valores usando a nossa chave que é unica
+
+// states["SP"] = "São Paulo -  valor alterado";
+
+// Console.WriteLine("Showing a new dictionary bettwen remove method");
+
+
+
+// foreach(KeyValuePair<string, string> item in states)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+
+// string keyValue = "BA3";
+// Console.WriteLine($"Verificando o elemento: {keyValue}");
+
+// if (states.ContainsKey(keyValue))
+// {
+//     Console.WriteLine($"Existenting value: {keyValue}");
+// }
+
+// else 
+// {
+//     Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {keyValue}");
+// }
+
+
+// //acessando diretamente o valor do dicionario
+
+// Console.WriteLine(states["MG"]);
 
 
 
