@@ -1,40 +1,155 @@
 ﻿using System.Globalization;
-using ExemploExplorando.Models;
-
-//o primeiro a entrar é o ultimo a sair 
-
-Stack<int> pilha = new Stack<int>();
+//using ExemploExplorando.Models;
+// Using dictionaries, you can place information followed by a key without worrying about their order.
 
 
-//lembrando que na pilha o primeiro elemento é o ultimo da pilha, é o metodo de empilhar
-pilha.Push(4);//4
-pilha.Push(6);//3
-pilha.Push(8);//2
-pilha.Push(10);//1
+// declaring the dictionary
+Dictionary<string, string> states =  new Dictionary<string, string>();
+
+states.Add("SP", "São Paulo");
+states.Add("BA", "Bahia");
+states.Add("MG", "Minas Gerais");
+states.Add("BA2", "Bahia");
+
+// we have a key and then the content
 
 
-foreach (var item in pilha)//posso usar assim //para percorrer a nossa pilha
-//ou assim foreach (int item in pilha)
+// iterating through the dictionary
+
+foreach(KeyValuePair<string, string> item in states)
+// or do like
+{   
+    // conventional print
+
+    //Console.WriteLine(item);
+
+    // formatting in a nicer way
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+
+// Here I have the possibility of adding an identical value to one that I have already used, the important thing is that the key is different
+//states.Add("BA2", "Bahia");
+
+Console.WriteLine("");
+
+Console.WriteLine("");
+
+Console.WriteLine("");
+
+states.Remove("BA2");
+
+//alterando valores usando a nossa chave que é unica
+
+states["SP"] = "São Paulo -  valor alterado";
+
+Console.WriteLine("Showing a new dictionary bettwen remove method");
+
+
+
+foreach(KeyValuePair<string, string> item in states)
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+
+string keyValue = "BA3";
+Console.WriteLine($"Verificando o elemento: {keyValue}");
+
+if (states.ContainsKey(keyValue))
+{
+    Console.WriteLine($"Existenting value: {keyValue}");
+}
+
+else 
+{
+    Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {keyValue}");
+}
+
+
+//acessando diretamente o valor do dicionario
+
+Console.WriteLine(states["MG"]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //o primeiro a entrar é o ultimo a sair 
+
+// Stack<int> pilha = new Stack<int>();
+
+
+// //lembrando que na pilha o primeiro elemento é o ultimo da pilha, é o metodo de empilhar
+// pilha.Push(4);//4
+// pilha.Push(6);//3
+// pilha.Push(8);//2
+// pilha.Push(10);//1
+
+
+// foreach (var item in pilha)//posso usar assim //para percorrer a nossa pilha
+// //ou assim foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
     
-}
+// }
 
-Console.WriteLine($"Removendo o item do topo da pilha: {pilha.Pop()}");
-// o meu pilha pop me retorna direto o item removido com a função
-
-
-//Console.WriteLine($"Adicionando o elemento 20 no lugar do elemento 10 pois trata-se de uma pilha: {pilha.Push(20)}");
-// Console.WriteLine($"Adicionando o elemento 20 no lugar do elemento 10, pois trata-se de uma pilha: {pilha.Push(20)}");
+// Console.WriteLine($"Removendo o item do topo da pilha: {pilha.Pop()}");
+// // o meu pilha pop me retorna direto o item removido com a função
 
 
-pilha.Push(20);
-Console.WriteLine("Adicionando o valor 20 ao topo da fila");
+// //Console.WriteLine($"Adicionando o elemento 20 no lugar do elemento 10 pois trata-se de uma pilha: {pilha.Push(20)}");
+// // Console.WriteLine($"Adicionando o elemento 20 no lugar do elemento 10, pois trata-se de uma pilha: {pilha.Push(20)}");
 
-foreach (var item in pilha)
-{
-    Console.WriteLine(item);
-}
+
+// pilha.Push(20);
+// Console.WriteLine("Adicionando o valor 20 ao topo da fila");
+
+// foreach (var item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
