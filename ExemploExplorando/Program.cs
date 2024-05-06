@@ -5,15 +5,24 @@ using ExemploExplorando.Models;
 //tupla -  uma estrutura de dados que armazena varios dados de diferentes tipos
 
 
-(int, string, string, decimal) tupla = (1, "Nome", "Sobrenome", 10.5M);
+(int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Nome", "Sobrenome", 10.5M);
 
-Console.WriteLine($"Id: {tupla.Item1}");
-Console.WriteLine($"Nome: {tupla.Item2}");
-Console.WriteLine($"Sobrenome: {tupla.Item3}");
-Console.WriteLine($"Altura: {tupla.Item4}");
+Console.WriteLine($"Id: {tupla.Id}");
+Console.WriteLine($"Nome: {tupla.Nome}");
+Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
+Console.WriteLine($"Altura: {tupla.Altura}");
+
+
+//ou
 
 
 
+// (int, string, string, decimal) tupla = (1, "Nome", "Sobrenome", 10.5M);
+
+// Console.WriteLine($"Id: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}");
 
 
 
