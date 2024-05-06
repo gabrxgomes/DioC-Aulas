@@ -13,7 +13,7 @@ pilha.Push(8);//2
 pilha.Push(10);//1
 
 
-foreach (var item in pilha)//posso usar assim
+foreach (var item in pilha)//posso usar assim //para percorrer a nossa pilha
 //ou assim foreach (int item in pilha)
 {
     Console.WriteLine(item);
@@ -21,8 +21,20 @@ foreach (var item in pilha)//posso usar assim
 }
 
 Console.WriteLine($"Removendo o item do topo da pilha: {pilha.Pop()}");
+// o meu pilha pop me retorna direto o item removido com a função
 
 
+//Console.WriteLine($"Adicionando o elemento 20 no lugar do elemento 10 pois trata-se de uma pilha: {pilha.Push(20)}");
+// Console.WriteLine($"Adicionando o elemento 20 no lugar do elemento 10, pois trata-se de uma pilha: {pilha.Push(20)}");
+
+
+pilha.Push(20);
+Console.WriteLine("Adicionando o valor 20 ao topo da fila");
+
+foreach (var item in pilha)
+{
+    Console.WriteLine(item);
+}
 
 
 
