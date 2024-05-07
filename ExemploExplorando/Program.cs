@@ -7,6 +7,11 @@ using ExemploExplorando.Models;
 
 (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Nome", "Sobrenome", 10.5M);
 
+ValueTuple<int, string, string, decimal> otherExempleTuple = (1, "Nome", "Sobrenome", 1.80M);
+var otherExempleTupleCreate =  Tuple.Create(1, "Nome", "Sobrenome", 1.80M);
+
+
+
 Console.WriteLine($"Id: {tupla.Id}");
 Console.WriteLine($"Nome: {tupla.Nome}");
 Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
