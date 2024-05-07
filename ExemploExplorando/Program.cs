@@ -2,32 +2,75 @@
 using ExemploExplorando.Models;
 
 
-//tupla -  uma estrutura de dados que armazena varios dados de diferentes tipos
 
 
-(int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Nome", "Sobrenome", 10.5M);
+LeituraArquivo arquivo =  new LeituraArquivo();
 
-ValueTuple<int, string, string, decimal> otherExempleTuple = (1, "Nome", "Sobrenome", 1.80M);
-var otherExempleTupleCreate =  Tuple.Create(1, "Nome", "Sobrenome", 1.80M);
-
+var (sucesso, linhasArquivo, QuantidadeLinhas) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
 
-Console.WriteLine($"Id: {tupla.Id}");
-Console.WriteLine($"Nome: {tupla.Nome}");
-Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
-Console.WriteLine($"Altura: {tupla.Altura}");
+if (sucesso)
+{
+    foreach(string linha in linhasArquivo)
+    {
+        Console.WriteLine(linha);
+    }
+}
+else
+{
+    Console.WriteLine("Não foi possivel ler o arquivo");
+}
 
 
-//ou
 
 
 
-// (int, string, string, decimal) tupla = (1, "Nome", "Sobrenome", 10.5M);
 
-// Console.WriteLine($"Id: {tupla.Item1}");
-// Console.WriteLine($"Nome: {tupla.Item2}");
-// Console.WriteLine($"Sobrenome: {tupla.Item3}");
-// Console.WriteLine($"Altura: {tupla.Item4}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //tupla -  uma estrutura de dados que armazena varios dados de diferentes tipos
+
+
+// (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Nome", "Sobrenome", 10.5M);
+
+// // ValueTuple<int, string, string, decimal> otherExempleTuple = (1, "Nome", "Sobrenome", 1.80M);
+// // var otherExempleTupleCreate =  Tuple.Create(1, "Nome", "Sobrenome", 1.80M);
+
+
+
+// Console.WriteLine($"Id: {tupla.Id}");
+// Console.WriteLine($"Nome: {tupla.Nome}");
+// Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
+// Console.WriteLine($"Altura: {tupla.Altura}");
+
+
+// //ou
+
+
+
+// // (int, string, string, decimal) tupla = (1, "Nome", "Sobrenome", 10.5M);
+
+// // Console.WriteLine($"Id: {tupla.Item1}");
+// // Console.WriteLine($"Nome: {tupla.Item2}");
+// // Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// // Console.WriteLine($"Altura: {tupla.Item4}");
 
 
 
