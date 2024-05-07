@@ -3,23 +3,75 @@ using ExemploExplorando.Models;
 
 
 
-
-LeituraArquivo arquivo =  new LeituraArquivo();
-
-var (sucesso, linhasArquivo, QuantidadeLinhas) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+int numero = 20;
+bool ehPar = false;
 
 
-if (sucesso)
+//IF TERNÁRIO
+ehPar = numero % 2 == 0;
+
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(numero % 2 == 0)
 {
-    foreach(string linha in linhasArquivo)
-    {
-        Console.WriteLine(linha);
-    }
+    Console.WriteLine($"O número {numero} é par");
 }
 else
 {
-    Console.WriteLine("Não foi possivel ler o arquivo");
+    Console.WriteLine($"O número {numero} é impar");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo =  new LeituraArquivo();
+
+// var (sucesso, linhasArquivo, QuantidadeLinhas) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// //podemos fazer um descarte de argumento da seguinte forma 
+// //var (sucesso, linhasArquivo, _) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+// //usando o underscore vc descarta um parametro que vem de um metodo porque talvez seja uma informação que você não precisa
+
+
+
+// if (sucesso)
+// {
+//     Console.WriteLine("Quantidade de linhas do arquivo:" + QuantidadeLinhas);
+//     foreach(string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possivel ler o arquivo");
+// }
 
 
 
