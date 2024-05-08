@@ -3,14 +3,21 @@ using ExemploExplorando.Models;
 using Newtonsoft.Json;
 //SERIALIZANDO DADOS
 
-
+List<Venda> listaVendas = new List<Venda>();
 
 //declarando o obj passando os paramertros juntos
 Venda v1 = new Venda(1, "Material de escritório", 25.00M);
+//agora vamos serializar uma lista de informações não apenas uma 
+Venda v2 = new Venda(2, "Licença de software", 110.00M);
+
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+
+
 
 //AGORA VAMOS PASSAR ESSE OBJ PARA UM JSON, VAMOS SERIALIZA-LO
 
-string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
 
 
 //escrevendo um arquivo json direto do c# e o criando na nossa hierarquia de arquivos
