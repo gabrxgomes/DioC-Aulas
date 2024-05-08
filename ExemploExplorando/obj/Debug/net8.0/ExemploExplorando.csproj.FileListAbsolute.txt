@@ -41,3 +41,6 @@ C:\Users\user\Desktop\BootCampDioATT\DioC-Aulas\ExemploExplorando\obj\Debug\net8
 C:\Users\user\Desktop\BootCampDioATT\DioC-Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
 C:\Users\user\Desktop\BootCampDioATT\DioC-Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\user\Desktop\BootCampDioATT\DioC-Aulas\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
+C:\Users\gabri\Desktop\DIOC#ATT04052024\DioC-Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\DIOC#ATT04052024\DioC-Aulas\ExemploExplorando\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\gabri\Desktop\DIOC#ATT04052024\DioC-Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.CopyComplete
