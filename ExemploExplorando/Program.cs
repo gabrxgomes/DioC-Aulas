@@ -2,13 +2,15 @@
 using ExemploExplorando.Models;
 using Newtonsoft.Json;
 //SERIALIZANDO DADOS
+DateTime  dataAtual = DateTime.Now;
+
 
 List<Venda> listaVendas = new List<Venda>();
 
 //declarando o obj passando os paramertros juntos
-Venda v1 = new Venda(1, "Material de escritório", 25.00M);
+Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
 //agora vamos serializar uma lista de informações não apenas uma 
-Venda v2 = new Venda(2, "Licença de software", 110.00M);
+Venda v2 = new Venda(2, "Licença de software", 110.00M, dataAtual);
 
 listaVendas.Add(v1);
 listaVendas.Add(v2);
