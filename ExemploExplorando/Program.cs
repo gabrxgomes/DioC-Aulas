@@ -1,32 +1,78 @@
 ﻿using System.Globalization;
 using ExemploExplorando.Models;
 using Newtonsoft.Json;
-//SERIALIZANDO DADOS
-DateTime  dataAtual = DateTime.Now;
 
 
-List<Venda> listaVendas = new List<Venda>();
-
-//declarando o obj passando os paramertros juntos
-Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
-//agora vamos serializar uma lista de informações não apenas uma 
-Venda v2 = new Venda(2, "Licença de software", 110.00M, dataAtual);
-
-listaVendas.Add(v1);
-listaVendas.Add(v2);
+//DESERIALIZAÇÃO, IMPORTANDO UM JSON
+//criamos uma nova classe/arquivo vendas1 para deserializar o json
 
 
+string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 
-//AGORA VAMOS PASSAR ESSE OBJ PARA UM JSON, VAMOS SERIALIZA-LO
+List<Venda1> listaVenda = JsonConvert.DeserializeObject<List<Venda1>>(conteudoArquivo);
 
-string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+foreach (Venda1 venda in listaVenda)
+{
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}" + 
+                        $"Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+}
 
 
-//escrevendo um arquivo json direto do c# e o criando na nossa hierarquia de arquivos
 
-File.WriteAllText("Arquivos/vendas.json", serializado);
 
-Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //SERIALIZANDO DADOS
+// DateTime  dataAtual = DateTime.Now;
+
+
+// List<Venda> listaVendas = new List<Venda>();
+
+// //declarando o obj passando os paramertros juntos
+// Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
+// //agora vamos serializar uma lista de informações não apenas uma 
+// Venda v2 = new Venda(2, "Licença de software", 110.00M, dataAtual);
+
+// listaVendas.Add(v1);
+// listaVendas.Add(v2);
+
+
+
+// //AGORA VAMOS PASSAR ESSE OBJ PARA UM JSON, VAMOS SERIALIZA-LO
+
+// string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+
+// //escrevendo um arquivo json direto do c# e o criando na nossa hierarquia de arquivos
+
+// File.WriteAllText("Arquivos/vendas.json", serializado);
+
+// Console.WriteLine(serializado);
 
 
 
