@@ -8,5 +8,6 @@ namespace ExemploPoo.Models
     public class Professor : Pessoa
     {
         public decimal Salario { get; set; }
+        
     }
 }
