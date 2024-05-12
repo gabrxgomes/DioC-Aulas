@@ -25,7 +25,7 @@ namespace ExemploPoo.Models
             else
             {
                 //throw new Exception("O valor sacado é maior que o saldo disponivel");
-                Console.WriteLine("O valor sacado é maior que o saldo disponivel");
+                Console.WriteLine("O valor a ser sacado é maior que o saldo disponivel");
             }
             
         }
