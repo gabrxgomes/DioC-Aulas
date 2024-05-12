@@ -17,7 +17,22 @@ namespace ExemploPoo.Models
         private decimal saldo;
         public void Sacar(decimal valor)
         {
-            saldo -= valor;
+            if (saldo >= valor)
+            {
+                saldo -= valor;
+                Console.WriteLine("Saldo realizado com sucesso");
+            }
+            else
+            {
+                //throw new Exception("O valor sacado é maior que o saldo disponivel");
+                Console.WriteLine("O valor sacado é maior que o saldo disponivel");
+            }
+            
+        }
+
+        public void ExibirSaldo()
+        {
+            Console.WriteLine("Seu saldo disponivel é: " + saldo);
         }
     }
 }

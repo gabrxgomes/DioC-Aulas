@@ -14,7 +14,7 @@ namespace ExemploExplorando.Models
                 Metodo2();
            }catch(Exception ex)
            {
-                t
+                
                 
            }
         }
