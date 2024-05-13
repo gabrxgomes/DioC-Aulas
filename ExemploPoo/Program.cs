@@ -1,13 +1,27 @@
 ﻿using ExemploPoo.Models;
+Conta c1 = new Conta();
+c1.saldo = 10;
+c1.ExibirSaldo();
+
+Corrente c = new Corrente();
+c.Creditar(500);
+c.ExibirSaldo();
 
 
-Aluno a1 = new Aluno();
-a1.Nome = "Nome aluno1";
-a1.Idade = 10;
-a1.Email = "fulano@gmail.com";
+//Iniciando classe abstrata que tem como objetivo ser um modelo a ser herdado, 
+//portanto a mesma não pode ser instanciada
+
+//então eu posso implementar metodos ou deixa-los a cargo de quem herdar essa classe abstrata
+//a nossa classe abstrata se chamara "conta"
 
 
-a1.Apresentar();
+// Aluno a1 = new Aluno();
+// a1.Nome = "Nome aluno1";
+// a1.Idade = 10;
+// a1.Email = "fulano@gmail.com";
+
+
+// a1.Apresentar();
 
 
 
