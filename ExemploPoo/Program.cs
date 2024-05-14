@@ -1,7 +1,7 @@
 ﻿using ExemploPoo.Models;
-Conta c1 = new Conta();
-c1.saldo = 10;
-c1.ExibirSaldo();
+// Conta c1 = new Conta();
+// c1.saldo = 10;
+// c1.ExibirSaldo();
 
 Corrente c = new Corrente();
 c.Creditar(500);

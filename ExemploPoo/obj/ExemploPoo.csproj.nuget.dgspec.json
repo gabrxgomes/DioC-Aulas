@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\BootCampDioATT\\DioC-Aulas-main\\ExemploPoo\\ExemploPoo.csproj": {}
+    "C:\\Users\\gabri\\Desktop\\DIOC#ATT04052024\\DioC-Aulas\\ExemploPoo\\ExemploPoo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\BootCampDioATT\\DioC-Aulas-main\\ExemploPoo\\ExemploPoo.csproj": {
+    "C:\\Users\\gabri\\Desktop\\DIOC#ATT04052024\\DioC-Aulas\\ExemploPoo\\ExemploPoo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\BootCampDioATT\\DioC-Aulas-main\\ExemploPoo\\ExemploPoo.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\DIOC#ATT04052024\\DioC-Aulas\\ExemploPoo\\ExemploPoo.csproj",
         "projectName": "ExemploPoo",
-        "projectPath": "C:\\Users\\user\\Desktop\\BootCampDioATT\\DioC-Aulas-main\\ExemploPoo\\ExemploPoo.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\BootCampDioATT\\DioC-Aulas-main\\ExemploPoo\\obj\\",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\DIOC#ATT04052024\\DioC-Aulas\\ExemploPoo\\ExemploPoo.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\DIOC#ATT04052024\\DioC-Aulas\\ExemploPoo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
