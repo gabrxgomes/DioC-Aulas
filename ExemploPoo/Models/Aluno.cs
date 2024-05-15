@@ -8,9 +8,10 @@ namespace ExemploPoo.Models
     public class Aluno : Pessoa //this is polimorfismo ! estou herdando os atributos
     //da classe Pessoa na minha classe aluno (: classe_que_vc_quer_herdar)
     {   
-        public Aluno()
+        public Aluno() //caso e queria instanciar aluno eu posso nao
+        //passar nada o passar um nome.
         {
-            
+
         }
         public Aluno(string nome) : base(nome)
         {

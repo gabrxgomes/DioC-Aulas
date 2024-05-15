@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ExemploPoo.Models
 {
-    public class Professor : Pessoa
+    public sealed class Professor : Pessoa
     {
         public Professor()//caso queria instanciar professor
         //eu posso passar um nome ou nao passar nada
