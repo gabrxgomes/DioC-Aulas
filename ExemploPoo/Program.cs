@@ -3,9 +3,15 @@
 // c1.saldo = 10;
 // c1.ExibirSaldo();
 
-Corrente c = new Corrente();
-c.Creditar(500);
-c.ExibirSaldo();
+Pessoa p1 = new Pessoa("Gab");
+
+Aluno a1 = new Aluno("Gab1");
+a1.Idade =  10;
+a1.Nota = 9;
+
+a1.Apresentar();
+p1.Apresentar();
+
 
 
 //Iniciando classe abstrata que tem como objetivo ser um modelo a ser herdado, 
