@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\TestRecord\bin\Debug\net8.0\TestRecord.exe
+C:\Users\user\Desktop\TestRecord\bin\Debug\net8.0\TestRecord.deps.json
+C:\Users\user\Desktop\TestRecord\bin\Debug\net8.0\TestRecord.runtimeconfig.json
+C:\Users\user\Desktop\TestRecord\bin\Debug\net8.0\TestRecord.dll
+C:\Users\user\Desktop\TestRecord\bin\Debug\net8.0\TestRecord.pdb
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\TestRecord.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\TestRecord.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\TestRecord.AssemblyInfo.cs
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\TestRecord.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\TestRecord.dll
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\refint\TestRecord.dll
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\TestRecord.pdb
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\TestRecord.genruntimeconfig.cache
+C:\Users\user\Desktop\TestRecord\obj\Debug\net8.0\ref\TestRecord.dll
