@@ -7,6 +7,9 @@ namespace ExemploPoo.Models
 {
     public class Diretor : Professor //não funciona
     {
-        
+        public override void Apresentar() // não funciona
+        {
+            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos e meu salario é {Salario}");
+        }   
     }
 }
